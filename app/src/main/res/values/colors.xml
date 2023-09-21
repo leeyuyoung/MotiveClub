@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#8b00ff</color>
+    <color name="motive_purple">#5243B0</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="motive_pink">#FDEAEB</color>
+    <color name="motive_red">#fa4756</color>
+
+    //캘린더
+    <color name="colorAccent">#FDEAEB</color>
+    <color name="colorPrimary">#fa4756</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSecondaryText">#5243B0</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorPrimaryInverseText">#FFFFFF</color>
+    <color name="colorSecondaryInverseText">#FFFFFF</color>
+</resources>

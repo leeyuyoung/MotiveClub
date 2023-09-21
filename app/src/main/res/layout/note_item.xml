@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rec_white"
+    android:orientation="vertical"
+    android:elevation="3dp"
+    android:id="@+id/note_item"
+    android:layout_marginBottom="18dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <!-- 제목-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:text="작성된 일기가 없습니다."
+            android:textColor="#454545"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:maxLength="20"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <!--내용-->
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#656565"
+            android:text="하단 버튼을 눌러 일기를 작성할 수 있습니다. 오늘의 기분과 일과를 작성해보세요!"
+            android:textSize="17dp" />
+
+        <!--날짜-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:text="2023.09.11"
+                android:textColor="#5243B0"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context=".DiaryWriteFragment">
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:background="#FA4756">
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="365dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/x"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/newDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="35dp"
+            android:focusable="true"
+            android:text="새 다이어리"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="35dp"
+            android:text="저장"
+            android:textColor="#F7F7F7"
+            android:textSize="22dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/calendarButton"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:hint="날짜를 선택하세요."
+            android:textColor="#5243B0"
+            android:textColorHint="#5243B0"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/calendarButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="46dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            app:srcCompat="@drawable/calendar" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Title EditText -->
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="제목을 입력하세요."
+            android:textColorHint="#A1A1A1"
+            android:textColor="#111111"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:maxLength="25"
+            android:background="@null" />
+
+        <!-- Content TextView -->
+        <EditText
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="오늘 하루 일기를 작성해보세요."
+            android:textColorHint="#A1A1A1"
+            android:textSize="20dp"
+            android:maxLength="500"
+            android:background="@null"
+            android:layout_below="@id/title"/>
+    </RelativeLayout>
+</LinearLayout>

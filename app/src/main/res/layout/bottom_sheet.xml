@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetDashBoardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_hideable="true"
+    app:behavior_draggable="true"
+    android:paddingBottom="30dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="더보기"
+        android:textColor="#111111"
+        android:gravity="center"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/changeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일기 수정하기"
+        android:textColor="#111111"
+        android:gravity="center"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/deleteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일기 삭제하기"
+        android:textColor="#111111"
+        android:gravity="center"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/changeText"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

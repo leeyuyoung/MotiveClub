@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item> <!-- 상단 Title 배경색 -->
+        <item name="colorControlActivated">@color/colorPrimary</item> <!-- 선택한 날짜 배경 색 -->
+        <item name="colorControlHighlight">@color/colorPrimary</item> <!-- Highlight item color -->
+        <item name="android:colorBackground">@color/colorBackground</item> <!-- Calendar Background color -->
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item> <!-- Week TextColor -->
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item> <!-- Calender Number color arrow color (< >) -->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPrimary</item> <!-- 버튼 텍스트 색상 -->
+        <item name="android:button">@style/MyButtonStyle</item> <!-- 버튼 스타일 지정 -->
+
+        <!-- 취소/확인버튼 색상 -->
+        <item name="cornerSize">16dp</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/black</item> <!-- 버튼 내 텍스트 색상 -->
+    </style>
+
+
+
+</resources>

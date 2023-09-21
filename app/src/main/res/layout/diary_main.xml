@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaryWriteFragment"
+    android:background="#FFFFFF"
+    android:id="@+id/container">
+
+    <!-- 상단 제목 -->
+    <TextView
+        android:id="@+id/club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="-0.03"
+        android:text="클럽"
+        android:textColor="#111111"
+        android:textSize="22dp"
+        android:textStyle="normal" />
+
+    <!-- 텍스트 뷰들을 가로로 나란히 배치하기 위한 가로 LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/notime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="-0.08"
+            android:text="NO TIME 피드"
+            android:textColor="#111111"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/yesdiary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="-0.08"
+            android:text="YES 다이어리"
+            android:textColor="#fa4756"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/progod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="-0.08"
+            android:text="프로갓생러"
+            android:textColor="#111111"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+    <!-- 나머지 UI 요소들... -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:stackFromBottom="true"
+        app:reverseLayout="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/buttonWrite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/pencil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
